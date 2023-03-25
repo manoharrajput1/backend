@@ -6,11 +6,12 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors')
 const path = require('path')
 const User = require('./models/schema');
+const helmet = require('helmet')
 require('dotenv').config()
 
 require('./db/conn');
 app.use(cookieParser())
-
+app.use(helmet())
 app.use(cors({
     origin: '*',
     credentials: true,
