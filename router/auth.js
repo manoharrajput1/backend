@@ -60,7 +60,7 @@ router.post('/signin',async (req,res)=>{
                 res.status(400).json({error:"invalid details"})
             }else{
                 // console.log('welcome')
-                res.header("Acces-Control-Allow-Origin":"https://cool-alfajores-bc25b8.netlify.app/").json('go to home page')
+                res.header("Acces-Control-Allow-Origin":"*").json('go to home page')
             }
         }else{
             res.status(400).json({error:"invalid details"})
