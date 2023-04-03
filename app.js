@@ -13,7 +13,7 @@ require('./db/conn');
 app.use(cookieParser())
 app.use(helmet())
 app.use(cors({
-    origin: 'https://cool-alfajores-bc25b8.netlify.app/',
+    origin: '*',
     credentials: true,
 }))
 app.use(express.json());
