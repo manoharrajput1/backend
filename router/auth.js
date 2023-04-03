@@ -59,7 +59,7 @@ router.post('/signin',async (req,res)=>{
             if(!isMatch){
                 res.status(400).json({error:"invalid details"})
             }else{
-                res.setHeader("Access-Control-Allow-Origin", "https://backend-kfwe.vercel.app");
+                res.setHeader("Access-Control-Allow-Origin", "https://taupe-seahorse-e4326e.netlify.app");
                 res.json('go to home page')
             }
         }else{
