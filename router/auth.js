@@ -59,7 +59,6 @@ router.post('/signin',async (req,res)=>{
             if(!isMatch){
                 res.status(400).json({error:"invalid details"})
             }else{
-                // console.log('welcome')
                 res.json('go to home page')
             }
         }else{
