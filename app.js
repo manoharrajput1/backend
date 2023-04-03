@@ -11,7 +11,7 @@ require('dotenv').config()
 require('./db/conn');
 app.use(cookieParser())
 app.use(cors({
-    origin: 'https://backend-kfwe.vercel.app/',
+    origin: 'https://taupe-seahorse-e4326e.netlify.app',
     credentials: true
 }))
 app.use(express.json());
