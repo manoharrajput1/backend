@@ -10,7 +10,6 @@ require('dotenv').config()
 
 require('./db/conn');
 app.use(cookieParser())
-app.use(helmet())
 app.use(cors({
     origin: '*',
     credentials: true
