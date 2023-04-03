@@ -11,7 +11,7 @@ require('dotenv').config()
 require('./db/conn');
 app.use(cookieParser())
 app.use(cors({
-    origin: 'https://taupe-seahorse-e4326e.netlify.app/',
+    origin: '*',
     credentials: true
 }))
 app.use(express.json());
