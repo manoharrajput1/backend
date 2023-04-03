@@ -60,7 +60,7 @@ router.post('/signin',async (req,res)=>{
                 res.status(400).json({error:"invalid details"})
             }else{
                 // console.log('welcome')
-                res.header('Acces-Control-Allow-Origin:'*')
+                res.headers('Acces-Control-Allow-Origin:'*')
                 res.json('go to home page')
             }
         }else{
