@@ -11,7 +11,7 @@ require('dotenv').config()
 require('./db/conn');
 app.use(cookieParser())
 app.use(cors({
-    origin: 'https://dancing-malasada-7487d3.netlify.app/',
+    origin: 'https://dancing-malasada-7487d3.netlify.app',
     credentials: true
 }))
 app.use(express.json());
