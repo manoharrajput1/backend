@@ -54,7 +54,7 @@ router.post('/signin',async (req,res)=>{
 
             console.log(token);
 
-            res.cookie('jwtoken',token,{expires:new Date(Date.now() + 2555500000), secure:true, path:'https://backend-kfwe.vercel.app'});
+            res.cookie('jwtoken',token,{expires:new Date(Date.now() + 2555500000), secure:true, path:'https://taupe-seahorse-e4326e.netlify.app'});
 
             if(!isMatch){
                 res.status(400).json({error:"invalid details"})
