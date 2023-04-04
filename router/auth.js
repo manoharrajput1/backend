@@ -54,7 +54,7 @@ router.post('/signin',async (req,res)=>{
 
             console.log(token);
 
-            res.cookie('jwtoken',token,{expires:new Date(Date.now() + 2555500000),httpOnly:true, secure:true});
+            res.cookie('jwtoken',token,{expires:new Date(Date.now() + 2555500000), secure:true});
 
             if(!isMatch){
                 res.status(400).json({error:"invalid details"})
