@@ -59,7 +59,7 @@ router.post('/signin',async (req,res)=>{
             if(!isMatch){
                 res.status(400).json({error:"invalid details"})
             }else{
-                res.setHeader("Access-Control-Allow-Origin", "https://portliofol.netlify.app/");
+                res.setHeader("Access-Control-Allow-Origin", "https://portliofol.netlify.app");
                 res.setHeader('Access-Control-Allow-Credentials', true)
                 res.json('go to home page')
             }
